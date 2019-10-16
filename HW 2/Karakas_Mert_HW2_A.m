@@ -44,24 +44,12 @@ plot(obs(:,1),obs(:,2),'r-');
 % Extra Credit Test
 obsSquare = []; % (30 50)
 obsSquare = cat(1, obsSquare, obs);
-% for i = 1:20
-%     obsSquare = cat(1, obsSquare, [i+30 50]);
-% end
-% for i = 1:20
-%     obsSquare = cat(1, obsSquare, [50 i+50]);
-% end
-% for i = 1:20
-%     obsSquare = cat(1, obsSquare, [50-i 70]);
-% end
-% for i = 1:20
-%     obsSquare = cat(1, obsSquare, [30 70-i]);
-% end
+
 for i = 1:21
     for j = 1:21
         obsSquare = cat(1, obsSquare, [29 + j 71 - i]);
     end
 end
-
 
 rho_0 = 15; % Distance of influence of the object
 
